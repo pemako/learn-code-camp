@@ -8,38 +8,73 @@
 </head>
 
 <body>
-  <h1>CatPhotoAPP</h1>
-  <section>
-    <h2>Cat Photos</h2>
-    <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
-    <a href="https://freecatphotoapp.com">
-      <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
-    </a>
-  </section>
+  <main>
+    <h1>CatPhotoAPP</h1>
+    <section>
+      <h2>Cat Photos</h2>
+      <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+      <a href="https://freecatphotoapp.com">
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+          alt="A cute orange cat lying on its back.">
+      </a>
+    </section>
 
-  <h2>Cat Lists</h2>
-  <h3>Things cats love:</h3>
-  <ul>
-    <li>cat nip</li>
-    <li>laser pointers</li>
-    <li>lasagna</li>
+    <section>
+      <h2>Cat Lists</h2>
+      <h3>Things cats love:</h3>
+      <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+      </ul>
+      <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+          alt="A slice of lasagna on a plate.">
+        <figcaption>Cats <em>love</em> lasagna.</figcaption>
+      </figure>
 
-    <img src="" alt="">
-  </ul>
+      <h3>Top 3 things cats hate:</h3>
+      <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+      </ol>
+      <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+          alt="Five cats looking around a field.">
+        <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+      </figure>
+    </section>
 
-  <h3>Top 3 things cats hate:</h3>
-  <ol>
-    <li>flea treatment</li>
-    <li>thunder</li>
-    <li>other cats</li>
+    <section>
+      <h2>Cat Form</h2>
+      <form action=""></form>
+      <!-- fieldset 和 legend 标签通常组合使用. fieldset 用于将表单元素组织在一起创建一个组合框架 legend 标签为该框架添加标题 -->
+      <fieldset>
+        <legend>Is your cat an indoor or outdoor cat?</legend>
+        <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+        <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+      </fieldset>
 
-    <img src="" alt="">
-  </ol>
+      <fieldset>
+        <legend>What's your cat's personality?</legend>
+        <!-- label 标签中的 for 属性与 input 标签于的 id 属性相同是为了提高用于体验和可访问性。
+        当点击 label 标签时，浏览器会自动聚焦到与 for 属性形同的 input 元素，这样用户点击标签时
+        就相当于点击了心爱钢管元素的输入框。 -->
+        <input type="checkbox" name="personality" id="loving" value="loving" checked> <label for="loving">Loving</label>
+        <input type="checkbox" name="personality" id="lazy" value="lazy"> <label for="lazy">Lazy</label>
+        <input type="checkbox" name="personality" id="energetic" value="energetic"> <label
+          for="energetic">Energetic</label>
+      </fieldset>
 
-  <h2>Cat Form</h2>
-  <article>
+      <input type="text" name="catphotourl" id="cat-photo-url" placeholder="cat photo URL">
+      <button type="submit">Submit</button>
+    </section>
+  </main>
 
-  </article>
+  <footer>
+    <p>No Copyright - <a href="">freeCodeCamp.org</a></p>
+  </footer>
 </body>
 
 </html>
